@@ -33,11 +33,11 @@ class TestLogin(unittest.TestCase):  # TEST SCENARIO
         browser = self.browser #buka web browser
         browser.get("http://barru.pythonanywhere.com/daftar") # buka situs
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("tester@jagoqa.com") # isi email
+        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("tester@jagoqa.com") 
         time.sleep(1)
-        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("hahahoho") # isi password
+        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("hahahoho") 
         time.sleep(1)
-        browser.find_element(By.ID,"signin_login").click() # klik tombol sign in
+        browser.find_element(By.ID,"signin_login").click()
         time.sleep(1)
 
         # validasi
@@ -50,11 +50,11 @@ class TestLogin(unittest.TestCase):  # TEST SCENARIO
     def test_c_failed_login_with_invalid_email(self): 
         # steps
         browser = self.browser #buka web browser
-        browser.get("http://barru.pythonanywhere.com/daftar") # buka situs
+        browser.get("http://barru.pythonanywhere.com/daftar") 
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("sahdasdg") # isi email
+        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("sahdasdg") 
         time.sleep(1)
-        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("") # isi password
+        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("") 
         time.sleep(1)
         browser.find_element(By.ID,"signin_login").click() # klik tombol sign in
         time.sleep(1)
@@ -69,11 +69,11 @@ class TestLogin(unittest.TestCase):  # TEST SCENARIO
         browser = self.browser #buka web browser
         browser.get("http://barru.pythonanywhere.com/daftar") # buka situs
         time.sleep(3)
-        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("") # isi email
+        browser.find_element(By.XPATH,"/html/body/div/div[2]/form/input[1]").send_keys("") 
         time.sleep(1)
-        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("") # isi password
+        browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("") 
         time.sleep(1)
-        browser.find_element(By.ID,"signin_login").click() # klik tombol sign in
+        browser.find_element(By.ID,"signin_login").click()
         time.sleep(1)
 
         # validasi
